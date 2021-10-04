@@ -20,13 +20,13 @@ body{
     border-right: 10px solid white;
     font-family: 'Gemunu Libre', sans-serif;
     padding-left: 30px;
-    background-color:rgb(221, 227, 235);
+    background-color:rgb(240, 242, 245);
     color:darkseagreen;
     
 } 
 
 .main{
-    padding-top: 35px;
+    padding-top: 50px;
      
    
 
@@ -43,8 +43,21 @@ h1, h2 {
 }
 
 .navbar{
-    padding-top: 10px;
     position:fixed;
+}
+
+.social-media{
+    /*padding-top: 8px;*/
+    
+    position: fixed;
+    
+    font-size: 20px;
+}
+
+.social-links{
+    float: right;
+    top: 0; 
+    padding-right:40px;
     
 }
 
