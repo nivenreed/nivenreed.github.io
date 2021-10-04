@@ -45,7 +45,13 @@ h1, h2 {
 .navbar{
     position:fixed;
 }
+/* .nav-bar{
+   padding-top: 10px;
+    position: fixed;*/
+    
 
+    
+}
 .social-media{
     /*padding-top: 8px;*/
     
@@ -87,6 +93,7 @@ nav a:hover{
 p{
     font-stretch: extra-expanded;
     font-size: 18px;
+    text-align: justify;
 }
 
 .main{
