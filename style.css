@@ -21,49 +21,35 @@ body{
     font-family: 'Gemunu Libre', sans-serif;
     padding-left: 30px;
     background-color:rgb(240, 242, 245);
-    color:darkseagreen;
-    
+    color:darkseagreen;    
 } 
 
 .main{
-    padding-top: 50px;
-     
-   
-
+    padding-top: 50px;   
 }
+
 h1{
    font-size: 38px; 
-
 }
 h1, h2 {
-
     color:darkseagreen;
     font-family: 'Gemunu Libre', sans-serif;
-
-}
-
-.navbar{
-    position:fixed;
-}
-/* .nav-bar{
-   padding-top: 10px;
-    position: fixed;*/
-    
-
-    
-}
-.social-media{
-    /*padding-top: 8px;*/
-    
-    position: fixed;
-    
-    font-size: 20px;
 }
 
 .social-links{
-    float: right;
-    top: 0; 
-    padding-right:40px;
+  float: right; 
+   padding-right:40px;
+   padding-top: 18px;
+}
+
+.pages{
+    float: left;
+}
+
+.navbar{
+    position: fixed;
+    
+    width: 80%;
     
 }
 
