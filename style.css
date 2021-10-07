@@ -85,7 +85,7 @@ nav a:hover{
 
 p{
     
-    font-size: 18px;
+    font-size: 15px;
     text-align: justify;
 }
 
@@ -110,4 +110,7 @@ a{
 }
 a:hover{
     color: white;
+}
+.text-link{
+    color: red;
 }
