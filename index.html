@@ -1,64 +1,73 @@
-<!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8"/>
-        <title>Nick Niven Reed Junior - Developer</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-      
-     <link href='./style.css' rel='stylesheet'>
-
-
-       <!-- <style>  Unused Style changed to style.css
-            p{
-                color: purple;
-                font-style: italic;
-            }
-            
-
-           h1, h2  {
-               font-family: 'Gemunu Libre', sans-serif;
-
-            }
-        </style> -->
-
-    </head>
-    <body>
-        <div class=body>
-        <header>
-            <div class='navbar'>
-                <nav>
-                    <div class='pages'>
-                    <ul>
-                        <li><a href='./index.html'>Home</a></li>
-                        <li><a href='./about.html'>About</a></li>
-                        <li><a href='./projects.html'>Projects</a></li>
-                    </div>
-                    <div class='social-links'>
-                        <li><a href='https://github.com/nivenreed' target='_blank'> <ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><a href='https://www.linkedin.com/in/nicholas-niven-reed-b25581147/' target='_blankb'><ion-icon name="logo-linkedin"></ion-icon></a> </li>
-                      </ul>
-                </nav>
-                    </div>
-            </div>     
-            <div class='main'>
-        </header>
-        <h1 class='title'>Hi, my <br>name is Nick.</h1>
-
-        <h2>I'm a beginner web Developer
-             <br>This is where I  will show case my journey </h2>
-        
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Nick Niven Reed - Junior Developer</title>
+</head>
+<body>
+    <nav class="site-nav grid">
+        <h1>Nick Junior Developer </h1>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#sills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <section id="welcome" class="grid">
+        <div class="welcome-text">
+            <h2>Hi, my <br>name is Nick <br>I am a junior developer</h2>
+            <p class="leading">Trainee developer based in South East London</p>
+            <a href="#portfolio" class="button">View iew My Work</a>
+        </div>    
+        <div class="welcome-img">
+           <img src="assets/nick.png" alt="Picture of me">
         </div>
-    
-
-    
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    </body>
+    </section>
+    <sectiion id="portfolio">
+        <h3>Some of my Prorojects</h3>
+        <div class="projects grid">
+            <a href="">
+                <img src="assets/computer-screen.png" alt="Portfolio Page V.1">
+                <h4>Portfolio Site V.1</h4>
+            </a>
+            <a href="">
+                <img src="assets/computer-screen.png" alt="Portfolio Page V.2">
+                <h4>Portolio Site V.2</h4>
+            </a>
+        </div>
+    </sectiion>
+    <section id="skils">
+        <h3>Things I Can Do</h3>
+        <ul>
+            <li>
+                <img src="assets/html.png" alt="HTML">
+                <h4>HTML</h4>
+            </li>
+            <li>
+                <img src="assets/css.png" alt="CSS">
+                <h4>CSS</h4>
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h3>Get in Touch</h3>
+        <form action="">
+            <input type="text" placeholder="NAME">
+            <input type="email" name="emial" id="">
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button class="button">Send Mesesage</button>
+        </form>
+    </section>
+    <footer>
+        <div class="grid">
+            <p class="copyright">Copyright 2021 Nick Niven Reed</p>
+            <ul class="social">
+                <li><a href=""><img src="assets/github.png" alt="GitHub"></a></li>
+                <li><a href=""><img src="assets/linked-in.png" alt="Linked In"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
