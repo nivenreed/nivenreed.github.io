@@ -18,53 +18,46 @@ body{
     width: 1000px;
     border-left: 10px solid white;
     border-right: 10px solid white;
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Bitter', serif;
     padding-left: 30px;
-    background-color:rgb(240, 242, 245);
-    color:darkseagreen;
-    
+    background-color:#f4f9fc;
+    color:#0f1b61;    
 } 
 
 .main{
-    padding-top: 50px;
-     
-   
-
+    padding-top: 50px;   
 }
+
 h1{
    font-size: 38px; 
-
 }
 h1, h2 {
-
-    color:darkseagreen;
+    color:0f1b61;
     font-family: 'Gemunu Libre', sans-serif;
-
-}
-
-.navbar{
-    position:fixed;
-}
-/* .nav-bar{
-   padding-top: 10px;
-    position: fixed;*/
-    
-
-    
-}
-.social-media{
-    /*padding-top: 8px;*/
-    
-    position: fixed;
-    
-    font-size: 20px;
 }
 
 .social-links{
-    float: right;
-    top: 0; 
-    padding-right:40px;
+  float: right; 
+   padding-right:40px;
+   padding-top: 18px;
+}
+
+.pages{
+    float: left;
+}
+
+.navbar{
+    position: fixed;
     
+    width: 80%;
+}
+
+.title-projects{
+    padding-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 nav ul{
@@ -79,7 +72,7 @@ nav li{
 }
 
 nav a{
-    color: darkseagreen;
+    color: #0f1b61;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -91,11 +84,30 @@ nav a:hover{
 }
 
 p{
-    font-stretch: extra-expanded;
+    
     font-size: 18px;
     text-align: justify;
 }
 
 .main{
    min-width: 250px;
+}
+table{
+    margin-top: 20px;
+}
+table, th, td{
+    border:2px solid #0f1b61;
+    border-collapse: collapse;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td{
+    padding: 15px;
+}
+a{
+    color: #0f1b61;
+}
+a:hover{
+    color: white;
 }
