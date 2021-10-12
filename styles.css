@@ -1,0 +1,44 @@
+/*variable*/
+:root{
+    --bg: #f4f9fc;
+    --text:#0f1b61;
+    --line:#7f00e0;
+    --fill:#aadcec;
+}
+/*reset*/
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/*base styles*/
+body{
+    background: var(--bg);
+    overflow-x: hidden;
+}
+.button{
+    background: repeating-linear-gradient(45deg, var(--bg),var(--bg) 15px, var(--fill) 15px,var(--fill) 20px);
+    border: 2px solid var(--line);
+    color: var(--line);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0,6);
+    display: inline-block;
+}
+.button:hover{
+    background: var(--fill);
+}
+input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding:10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893D8;
+    color: var(--text);
+}
+.welcome-img img{
+    background: repeating-linear-gradient(45deg, var(--bg),var(--bg) 15px, var(--fill) 15px,var(--fill) 20px);
+}
