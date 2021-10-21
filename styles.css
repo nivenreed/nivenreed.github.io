@@ -1,0 +1,63 @@
+body::before, body:after {
+    content: '';
+    position: fixed;
+    background: white;
+    left:0;
+    right: 0;
+    height: 20px;
+}
+body::before{
+    top: o;
+}
+body::after {
+    bottom: 0;
+}
+/*variable*/
+:root{
+    --bg: #f4f9fc;
+    --text:#0f1b61;
+    --line:#7f00e0;
+    --fill:#aadcec;
+}
+/*reset*/
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/*base styles*/
+body{
+    background: var(--bg);
+    overflow-x: hidden;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+}
+.button{
+    background: repeating-linear-gradient(45deg, var(--bg),var(--bg) 15px, var(--fill) 15px,var(--fill) 20px);
+    border: 2px solid var(--line);
+    color: var(--line);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0,6);
+    display: inline-block;
+    margin-top: 5px;
+}
+.button:hover{
+    background: var(--fill);
+}
+input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding:10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893D8;
+    color: var(--text);
+}
+.welcome-img img{
+    padding: 20px 30px 00px 30px;
+    /*background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.93 22.93'%3E%3Cpolygon fill='%23aadcec' points='0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18'/%3E%3Cpolygon fill='%23aadcec' points='22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37'/%3E%3C/svg%3E);
+    background: repeating-linear-gradient(45deg, var(--bg),var(--bg) 15px, var(--fill) 15px,var(--fill) 20px);*/
+}
