@@ -21,8 +21,8 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
     </nav>            
-                <div id="myNav" class="overlay">
-                    <a href="javascipt:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div id="my-nav" class="overlay">
+                    <button class="closebtn" onclick="closeNav()" typ="button" style="cursor: pointer;">&times;</button>
                     <div class="overlay-content">
                         <ul class="menu-social-links">
                             <li class="social-links-item"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
@@ -47,7 +47,7 @@
          </div>
     </section>
     <section id="portfolio">
-        <h3 class="projects">Some of my Prorojects</h3>
+        <h3 class="projects">Some of my Projects</h3>
         <div class="projects grid">
             <a href="">
                 <img src="assets/computer-screen.png" alt="Portfolio Page V.1">
@@ -96,17 +96,18 @@
     </footer>
     <script>
     function openNav() {
-        document.getElementById("myNav").style.height = "95%" ;
+        document.getElementById("my-nav").style.height = "95%" ;
     }
     function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("my-nav").style.height = "0%";
 }
 </script>
 <!--<script>
     function change_menu_toClose(){
         document.getElementById("").innerHTML = "Close";
-    }
-</script>-->    
+    }   
+</script>-->
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>
