@@ -50,6 +50,10 @@ body{
     background: none;
     border: none;
 }
+#menu-close{
+    visibility: hidden;
+    
+}
 .button:hover{
     background: var(--fill);
 }

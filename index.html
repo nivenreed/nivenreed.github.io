@@ -17,7 +17,8 @@
         <h1>Nick Junior Developer </h1>
 
                 <ul>
-                    <li  id="menu-open"><span  style="cursor: pointer;" onclick="openNav()">Menu</span></li>
+                    <li  id="menu-open" style="cursor: pointer;" onclick="toggleNav()">Menu</li>
+                    <li  id="menu-close" style="cursor: pointer;" onclick="closeNav(); menu_open_close()">Close</li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
     </nav>            
@@ -94,7 +95,7 @@
             </ul>
         </div>
     </footer>
-    <script>
+<!-- <script>
     function openNav() {
         document.getElementById("my-nav").style.height = "95%" ;
     }
@@ -102,12 +103,29 @@
   document.getElementById("my-nav").style.height = "0%";
 }
 </script>
+<script>
+    function menu_open_close() {
+        if (document.getElementById("menu-open")){
+
+            if (document.getElementById("menu-open").style.visibility =="hidden"){
+                document.getElementById("menu-open").style.visibility = "visible";
+                document.getElementById("menu-close").style.visibility = "hidden";
+            }
+            else{
+                document.getElementById("menu-open").style.visibility = "hidden";
+                document.getElementById("menu-close").style.display = "visible";
+            }
+        }
+    }
+        
+</script>-->
 <!--<script>
     function change_menu_toClose(){
         document.getElementById("").innerHTML = "Close";
     }   
 </script>-->
-
+<script src="main.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
+    
 </html>

@@ -40,7 +40,7 @@
     transition: 0.5s;
     border-left: 20px;
     border-right: 20px;
-    
+    visibility: hidden;
 }
 .overlay-content{
     position: relative;
