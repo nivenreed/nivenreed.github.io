@@ -46,12 +46,8 @@ body{
     display: inline-block;
     margin-top: 5px;
 }
-.closebtn{
-    background: none;
-    border: none;
-}
 #menu-close{
-    visibility: hidden;
+    display: none;
     
 }
 .button:hover{

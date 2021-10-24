@@ -18,20 +18,26 @@
 
                 <ul>
                     <li  id="menu-open" style="cursor: pointer;" onclick="toggleNav()">Menu</li>
-                    <li  id="menu-close" style="cursor: pointer;" onclick="closeNav(); menu_open_close()">Close</li>
+                    <li  id="menu-close" style="cursor: pointer;" onclick="toggleNav()">Close</li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
     </nav>            
                 <div id="my-nav" class="overlay">
-                    <button class="closebtn" onclick="closeNav()" typ="button" style="cursor: pointer;">&times;</button>
                     <div class="overlay-content">
                         <ul class="menu-social-links">
-                            <li class="social-links-item"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li class="social-links-item"><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li class="social-links-li"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li class="social-links-git"><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
                         </ul>
                         <ul class="menu-links">
-                           <li class="menu-link-item"><a href="#">About</a></li>
-                           <li class="menu-link-item"><a href="#">Work</a></li>
+                            <li class="menu-link-item"><a href="/index.html">Home</a>
+                                <span class="menu-link-summary">Back to home page.</span>
+                            </li>
+                           <li class="menu-link-item"><a href="/about.html">About</a>
+                                <span class="menu-link-summary">A  little about me and my background.</span>          
+                            </li>
+                           <li class="menu-link-item"><a href="/projects.html">Work</a>
+                                 <span class="menu-link-summary">Some examples of my work.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
