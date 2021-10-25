@@ -17,8 +17,6 @@
 .site-nav li{
     margin-left: 20px;
 }
-
-
 .site-nav h1{
     grid-column: 1/4;
     grid-row: 1;
@@ -29,7 +27,7 @@
 
 .overlay{
     height: 0;
-    width: 100vw;
+    width: 95%;
     position: fixed;
     z-index: 1;
     left: 20px;
@@ -40,50 +38,56 @@
     transition: 0.5s;
     border-left: 20px;
     border-right: 20px;
-    
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.overlay ul{
+    visibility: hidden;
 }
 .overlay-content{
     position: relative;
     top: 25%;
-    margin-top: 30px;
-    padding-left: 10px; 
+    left: 8%;
 }
 
 .overlay a{
     text-decoration: none;
-    font-size: 2em;
     color: var(--text);
-/* display: block;*/
-    transition: 0.3s;
-    
 }
 
+.overlay-content .menu-links{
+    font-size: 3em;
+}
 .overlay a:hover, .overlay a:focus{
     color: white;
 }
-.overlay .closebtn{
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-.overlay-content img{
-    width: 20px;
-}
+
 .menu-social-links{
     display: flex;
     padding: 20px 20px;
+    font-size: 1.3em        
+}
+.menu-social-links::before{
+    display: inline-block;
+    content: "";
+    border-top: 0.15em solid var(--line);
+    width: 4em;
+    margin: 0 2rem;
+    transform: translateY(40%);
 }
 .menu-social-links li{
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .menu-links{
     padding: 10px;
 }
 .menu-links li{
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 } 
+.menu-link-summary{
+    display: none;
+}
 .site-nav{
     width: 90%;
     height: 100px;
@@ -95,6 +99,7 @@
     padding: 0 20px 20px 20px;
     grid-column: 3/7;
     grid-row: 2;
+    animation: reveal .8s cubic-bezier(.215,.61,.355,1) .25s backwards;;
 }
 .welcome-img{
     padding-top: 50px;
@@ -248,7 +253,15 @@ footer img{
         margin: 20px 0;
     }
     .site-nav{
+        width: 95%;
         padding: 0 20px;
+    }
+    .menu-link-summary{
+        left: 30%;
+        position: absolute;
+        font-size: 0.3em;
+        display: inline-block;
+        padding-top: 50px;
     }
    
   

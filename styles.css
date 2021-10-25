@@ -46,9 +46,9 @@ body{
     display: inline-block;
     margin-top: 5px;
 }
-.closebtn{
-    background: none;
-    border: none;
+#menu-close{
+    display: none;
+    
 }
 .button:hover{
     background: var(--fill);
