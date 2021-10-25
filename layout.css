@@ -41,6 +41,9 @@
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
+.about-page .overlay{
+    background-color: var(--aboutbg)
+}
 .overlay ul{
     visibility: hidden;
 }
@@ -97,7 +100,7 @@
 
 .welcome-text{
     padding: 0 20px 20px 20px;
-    grid-column: 3/7;
+    grid-column: 2/8;
     grid-row: 2;
     animation: reveal .8s cubic-bezier(.215,.61,.355,1) .25s backwards;;
 }
@@ -112,13 +115,13 @@
 .welcome-text a{
     margin: 20px o;
 }
-.welcome-text h2, p, a{
+/*.welcome-text h2, p, a{
     text-align: center;
-}
+}*/
 .welcome-text .button{
-    margin: 20px 0%;
     position:relative;
-    left: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #portfolio h3{
     margin-bottom: o;
@@ -194,6 +197,48 @@ footer .social{
 footer img{
     width: 20px;
 }
+/*about page*/
+.about-page img{
+    width: 80%;
+}
+.about-text{
+    padding-top: 100px;
+    grid-column: 2/8;
+    grid-row: 1;
+}
+.my-background{
+    padding-top: 100px;
+    grid-column: 2/8;
+    grid-row: 2;
+    
+}
+.beekeeping{
+    grid-column: 2/8;
+    grid-row: 4;
+    
+}
+.beekeeping-image{
+    padding-top: 100px;
+    grid-column: 3/7;
+    grid-row: 3;
+}
+.bbq{
+    grid-column: 2/8;
+    grid-row: 6;
+}
+.bbq-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    grid-column: 3/9;
+    grid-row: 5;
+
+}
+.photography{
+    padding-top: 50px;
+    grid-column: 2/8;
+}
 
 @media screen and (min-width: 620px) {
 
@@ -241,7 +286,7 @@ footer img{
 }
 @media screen and (min-width: 960px){
     body{
-        font-size: 20px;
+        font-size: 22px;
     }
     .grid{
         width: 100%;
@@ -264,7 +309,6 @@ footer img{
         padding-top: 50px;
     }
    
-  
     .welcome-text{
         padding: 0 20px 20px 20px;
         grid-column: 1/4;
@@ -296,11 +340,50 @@ footer img{
     .skills img{
         height:90px;
     }
+    /*about-page*/
+    .about-text{
+        padding: 100px 20px 20px 20px;
+        grid-column: 2/8;
+        grid-row: 1;
+    }
+    .my-background{
+        padding: 100px 50px 20px 20px;
+        grid-column: 2/9;
+        grid-row: 2;
+        
+    }
+    .beekeeping{
+        padding-top: 100px;
+        grid-column: 2/6;
+        grid-row: 3;
+        
+    }
+    .beekeeping-image{
+        padding-top: 100px;
+        grid-column: 6/9;
+        grid-row: 3;
+    }
+    .bbq{
+        grid-column: 5/8;
+        grid-row: 4;
+    }
+    .bbq-image{
+        display: block;
+        
+    padding-top: 100px;
+        grid-column: 1/5;
+        grid-row: 4;
+    
+    }
+    .photography{
+        padding: 100px 50px 20px 20px;
+        grid-column: 2/8;
+    }
 }
 @media screen and (min-width:1200px){
 
     body{
-        font-size: 22px;
+        font-size: 24px;
     }
     
 }
