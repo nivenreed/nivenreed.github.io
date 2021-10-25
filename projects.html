@@ -1,57 +1,77 @@
-<!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="utf-8"/>
-        <title>Nick Niven Reed - Projects</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-      
-
-     <link href='./style.css' rel='stylesheet'>
-
-
-       
-
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="layout.css">
+        <title>Nick Niven Reed - Junior Developer</title>
     </head>
-    <body>
-        <div class='navbar'>
-            <nav>
-                <div class='pages'>
-                <ul>
-                    <li><a href='./index.html'>Home</a></li>
-                    <li><a href='./about.html'>About</a></li>
-                    <li><a href='./projects.html'>Projects</a></li>
-                </div>
-                <div class='social-links'>
-                    <li><a href='https://github.com/nivenreed' target='_blank'> <ion-icon name="logo-github"></ion-icon></a></li>
-
-                    <li><a href='https://www.linkedin.com/in/nicholas-niven-reed-b25581147/' target='_blank'><ion-icon name="logo-linkedin"></ion-icon></a> </li>
-
+    <body class="projects-page">
+        <nav class="site-nav grid">
+            <h1>Nick Junior Developer </h1>
+    
+                    <ul>
+                        <li  id="menu-open" style="cursor: pointer;" onclick="toggleNav()">Menu</li>
+                        <li  id="menu-close" style="cursor: pointer;" onclick="toggleNav()">Close</li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+        </nav>            
+                    <div id="my-nav" class="overlay">
+                        <div class="overlay-content">
+                            <ul class="menu-social-links">
+                                <li class="social-links-li"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li class="social-links-git"><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                            </ul>
+                            <ul class="menu-links">
+                                <li class="menu-link-item"><a href="/index.html">Home</a>
+                                    <span class="menu-link-summary">Back to home page.</span>
+                                </li>
+                               <li class="menu-link-item"><a href="/about.html">About</a>
+                                    <span class="menu-link-summary">A  little about me and my background.</span>          
+                                </li>
+                               <li class="menu-link-item"><a href="/projects.html">Work</a>
+                                     <span class="menu-link-summary">Some examples of my work.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        <section id="portfolio">
+            <div class="about-work">
+                <h2>About my work.</h2>
+                <p>I am taking a project based approach to learning to code. I have always found that I learn best by doing.
+                    By taking this approach I hope to have a better ability at problem solving.
+                    As with everting in life I try to find a soloultion or work around. I see a problem as a chalange to find the solution.
+                </p>
+            </div>
+            <h2 class="portfolio">These are some the projects I have worked on</h2>
+            <div class="projects grid">
+                <a href="">
+                    <img src="assets/computer-screen.png" alt="Portfolio Page V.1">
+                    <h4>Portfolio Site V.1</h4>
+                </a>
+                <a href="./portfolio-site.html">
+                    <img src="assets/siteV2.png" alt="Portfolio Page V.2">
+                    <h4>Portolio Site V.2</h4>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="grid">
+                <p class="copyright">Copyright 2021 Nick Niven Reed</p>
+                <ul class="social">
+                    <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 </ul>
-                 </div>
-             </nav>
-                </div>
-            <div class='main'>
-        </header>
-        <h1 class='title-projects'>These are the projects I have worked on</h1>
-        <div class="row">
-            <table>
-                <tr>
-
-                    <ta><a href='./portfolio-site.html'>Nick Niven Reed<br>Web Developer<br>Hompage</a></ta>
-
-                    
-                    <ta><a href='./index.html'>Homepage<br>V.2<br>Coming Soon</a> </ta>
-                </tr>
-            </table>
-        
-        </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
+    
 </html>
