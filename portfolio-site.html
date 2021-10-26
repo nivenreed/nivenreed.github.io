@@ -1,67 +1,91 @@
-<!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="utf-8"/>
-        <title>Nick Niven Reed - Projects</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-      
-
-     <link href='./style.css' rel='stylesheet'>
-
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="layout.css">
+        <title>Nick Niven Reed - Junior Developer</title>
     </head>
-    <body>
-        <header>
-            <div class='navbar'>
-                <nav>
-                    <div class='pages'>
+    <body class="portfolio-page">
+        <nav class="site-nav grid">
+            <h1>Nick Junior Developer </h1>
+    
                     <ul>
-                        <li><a href='./index.html'>Home</a></li>
-                        <li><a href='./about.html'>About</a></li>
-                        <li><a href='./projects.html'>Projects</a></li>
+                        <li  id="menu-open" style="cursor: pointer;" onclick="toggleNav()">Menu</li>
+                        <li  id="menu-close" style="cursor: pointer;" onclick="toggleNav()">Close</li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+        </nav>            
+                    <div id="my-nav" class="overlay">
+                        <div class="overlay-content">
+                            <ul class="menu-social-links">
+                                <li class="social-links-li"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li class="social-links-git"><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                            </ul>
+                            <ul class="menu-links">
+                                <li class="menu-link-item"><a href="/index.html">Home</a>
+                                    <span class="menu-link-summary">Back to home page.</span>
+                                </li>
+                               <li class="menu-link-item"><a href="/about.html">About</a>
+                                    <span class="menu-link-summary">A  little about me and my background.</span>          
+                                </li>
+                               <li class="menu-link-item"><a href="/projects.html">Work</a>
+                                     <span class="menu-link-summary">Some examples of my work.</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class='social-links'>
-                        <li><a href='https://github.com/nivenreed' target='_blank'> <ion-icon name="logo-github"></ion-icon></a></li>
+      <!--<div class="grid">-->
+            <div class="about-portfolio">
+                <h2>Portfolio Site</h2>
+                <p>October 2021</p>
+            </div>
+            <div class="skills-used grid">
+                <p>
+                 <strong>Skills Learnt:</strong> 
+                 HTMl, CSS, VS Code, <a class='text-link' href='https://github.com/nivenreed/nivenreed.github.io'>GitHub repositories</a>
+                  and using Trello Boards tasks
+                </p>
+            
+                <p>
+                This Portfolio Site was built to show the projects I've been working on and the skills I have learnt.
 
-                        <li><a href='https://www.linkedin.com/in/nicholas-niven-reed-b25581147/' target='_blank'><ion-icon name="logo-linkedin"></ion-icon></a> </li>
-
-                      </ul>
-                </nav>
-                    </div>
-            </div>     
-        </header>
-        <div class='main'>
-            <h2>Portfolio Site</h2>
-            <p>October 2021</p>
-             <p>
-            <strong>Skills Learnt:</strong> 
-            HTMl, CSS, VS Code, <a class='text-link' href='https://github.com/nivenreed/nivenreed.github.io'>GitHub repositories</a> and using Trello Boards tasks
-            </p>
-            <p>
-            This Portfolio Site was built to show the projects I've been working on and the skills I have learnt.
-
-            It has given me an understanding of basic Html and CSS as well as using GitHub repositories.
-            I have been  have been guide through the process by an experienced full stack developer, 
-            this has been invaluable in learning not only the basics of coding but also how the industry work follow works.
-            From being set tasks using Trello boards to posting to GitHub repositories and branch repositories and submitting for review.
-
-            </p>
-            <p>
+                It has given me an understanding of basic Html and CSS as well as using GitHub repositories.
+                I have been guide through the process by an experienced full stack developer, 
+                this has been invaluable in learning not only the basics of coding but also how the industry work follow works.
+                From being set tasks using Trello boards to posting to GitHub repositories and branch repositories and submitting for review.
+                </p>
+           
+                <p>
                 Please take a look at the project on <a class='text-link' href='https://github.com/nivenreed/nivenreed.github.io'> GitHub</a>
-            </p>
-    </div>
+                </p>
+               / why does the css code not pick up these different classes?@
+                <div class="portfolio-img">
+                    <img src="./assets/siteV2.png" alt="" class="portfolio-computer">
+                    <img src="./assets/iPhone.png" alt="" class="portfolio-iphone">
+                    <img src="./assets/iPad.png" alt="" class="portfolio-ipad">
+                </div> 
+            </div>  
         
 
-
+        
+    <footer>
+        <div class="grid">
+            <p class="copyright">Copyright 2021 Nick Niven Reed</p>
+            <ul class="social">
+                <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    
-    </body>
- 
-    
- </html>
+</body>
+
+</html>
