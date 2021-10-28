@@ -42,7 +42,10 @@
     transition: all 0.3s ease-in-out;
 }
 .about-page .overlay{
-    background-color: var(--aboutbg)
+    background-color: var(--projbg)
+}
+.projects-page .overlay{
+    background-color: var(--portfoliooverlay);
 }
 .overlay ul{
     visibility: hidden;
@@ -231,7 +234,7 @@ footer img{
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
-    grid-column: 3/9;
+    grid-column: 3/7;
     grid-row: 5;
 
 }
@@ -239,6 +242,89 @@ footer img{
     padding-top: 50px;
     grid-column: 2/8;
 }
+/*projects-page*/
+.portfolio{
+    padding-top: 60px;
+}
+.about-work{
+    padding: 100px 40px 0px 40px; 
+}
+.portfolio h2{
+    text-align: center;
+}
+.portfolio-title{
+    padding-top: 20px;
+    text-align: center;
+}
+/*portfolio-page*/
+#portfolio-page a{
+    border-bottom: solid 1px var(--line);
+}
+.portfolio-page img{
+    max-height: 200px;
+    width: auto;
+}
+.about-portfolio{
+    grid-column: span 8;
+    padding-left: 10px;
+}
+
+.about-portfolio h2{
+    padding-top: 100px;
+    
+}
+.about-portfolio p{
+    padding-bottom: 30px;
+    grid-column: 2/8;
+    
+}
+.skills-used{
+    padding: 20px 10px;
+    grid-column: 1/9;
+    grid-row: 3;
+}
+.skills-used p:nth-child(1){
+    grid-column: 2/8;
+    grid-row: 3;
+    padding-bottom: 30px;
+}
+.skills-used p:nth-child(2){
+    grid-column: 2/8;
+    grid-row: 4;
+}
+
+.portfolio-computer{
+    grid-column: 4/9;
+    grid-row: 4;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+}
+.computer-layout{
+    grid-column: 1/4;
+    grid-row: 4;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+}
+.portfolio-iphone {
+    grid-column: span 3;
+    grid-row: 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio-ipad{
+    grid-column: span 3;
+    grid-row: 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+.github{
+    grid-column: span 6;
+    grid-row: 7;
+    padding: 10px;
+}
+
 
 @media screen and (min-width: 620px) {
 
@@ -294,6 +380,7 @@ footer img{
         margin: 0 auto;
         box-sizing: border-box;
     }
+    
     .leading{
         margin: 20px 0;
     }

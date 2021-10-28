@@ -20,6 +20,10 @@ body::after {
     --fill:#aadcec;
     --aboutbg: #fff7f7;
     --workbg: #f7f8f9;
+    --projectbg: #fff7f7;
+    --projbg:  #FCC5D3;
+    --portfoliobg: #f7f8f9;
+    --portfoliooverlay: #9bdabe
 }
 /*reset*/
 body,p,a,ul,li{
@@ -33,13 +37,17 @@ li{
 }
 /*base styles*/
 body{
+    min-height: calc(100vh - 40px);
     background: var(--bg);
     overflow-x: hidden;
     border-left: 20px solid white;
     border-right: 20px solid white;
 }
 .about-page{
-    background-color: var(--workbg);
+    background-color: var(--projectbg);
+}
+.projects-page{
+    background-color: var(--portfoliobg);
 }
 .beekeeping{
     text-align: left;
