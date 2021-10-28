@@ -279,7 +279,7 @@ footer img{
     
 }
 .skills-used{
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
     grid-column: 1/9;
     grid-row: 3;
 }
