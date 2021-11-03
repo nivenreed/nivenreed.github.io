@@ -116,7 +116,7 @@
     width: 80%; 
 }
 .welcome-text a{
-    margin: 20px o;
+    margin: 20px 0;
 }
 /*.welcome-text h2, p, a{
     text-align: center;
@@ -127,7 +127,7 @@
     margin-right: auto;
 }
 #portfolio h3{
-    margin-bottom: o;
+    margin-bottom: 0;
     text-align: center;
     padding: 0 20px 20px 20px;
 }
