@@ -249,11 +249,10 @@ footer img{
 .about-work{
     padding: 100px 40px 0px 40px; 
 }
-.portfolio h2{
+/*.portfolio h2{
     text-align: center;
-}
-.portfolio-title{
-    padding-top: 20px;
+}*/
+.projects{
     text-align: center;
 }
 /*portfolio-page*/
