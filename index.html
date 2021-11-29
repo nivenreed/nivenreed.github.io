@@ -4,25 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-        <!-- Primary Meta Tags -->
+
+    <!-- Primary Meta Tags -->
     <title>Nick Niven Reed - Junior Developer</title>
-    <meta name="title" content="Nick Niven Reed - Junior Developer">
-    <meta name="description" content="Junior web developer based in South East London">
+    <meta name="title" content="Nick Niven Reed - Junior Developer" />
+    <meta
+      name="description"
+      content="Junior web developer based in South East London"
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nivenreed.github.io/">
-    <meta property="og:title" content="Nick Niven Reed - Junior Developer">
-    <meta property="og:description" content="Junior web developer based in South East London">
-    <meta property="og:image" content="https://nivenreed.github.io/assets/siteV2.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nivenreed.github.io/" />
+    <meta property="og:title" content="Nick Niven Reed - Junior Developer" />
+    <meta
+      property="og:description"
+      content="Junior web developer based in South East London"
+    />
+    <meta
+      property="og:image"
+      content="https://nivenreed.github.io/assets/siteV2.png"
+    />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nivenreed.github.io/">
-    <meta property="twitter:title" content="Nick Niven Reed - Junior Developer">
-    <meta property="twitter:description" content="Junior web developer based in South East London">
-    <meta property="twitter:image" content="https://nivenreed.github.io/assets/siteV2.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nivenreed.github.io/" />
+    <meta
+      property="twitter:title"
+      content="Nick Niven Reed - Junior Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Junior web developer based in South East London"
+    />
+    <meta
+      property="twitter:image"
+      content="https://nivenreed.github.io/assets/siteV2.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +52,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="layout.css" />
-    
   </head>
   <body>
     <nav class="site-nav grid">
@@ -56,12 +73,12 @@
           <li class="social-links-li">
             <a
               href="https://www.linkedin.com/in/nicholas-niven-reed"
-              target="_blank"
+              target="_blank" rel="noopener"
               ><ion-icon name="logo-linkedin"></ion-icon
             ></a>
           </li>
           <li class="social-links-git">
-            <a href="https://github.com/nivenreed" target="_blank"
+            <a href="https://github.com/nivenreed" target="_blank" rel="noopener"
               ><ion-icon name="logo-github"></ion-icon
             ></a>
           </li>
@@ -97,18 +114,44 @@
         <a href="#portfolio" class="button">View My Work</a>
       </div>
       <div class="welcome-img">
-        <img src="assets/Nick.png" alt="Picture of me" />
+        <img
+          src="assets/Nick-small.png" 
+          srcset="assets/Nick-big.png 50w , assets/Nick-small.png 500w"
+          sizes="(min-width: 620px) 250vw, "
+          width="592"
+          height="800"
+          alt="Picture of me"
+          
+        />
       </div>
     </header>
     <section id="portfolio">
       <h3 class="projects">Some of my Projects</h3>
       <div class="projects grid">
-        <a href="">
-          <img src="assets/computer-screen.png" alt="Portfolio Page V.1" />
+        <a href="#">
+          <img
+            src="assets/computer-screen-big.png"
+            srcset="
+              assets/computer-screen-big.png   1x,
+              assets/computer-screen-small.png 2x
+            "
+            sizes="max-width: 360px"
+            width="120"
+            height="290"
+            alt="Portfolio Page V.1"
+          />
           <h4>Portfolio Site V.1</h4>
         </a>
         <a href="./portfolio-site.html">
-          <img src="assets/siteV2.png" alt="Portfolio Page V.2" />
+          <img
+            src="assets/siteV2-big.png"
+            srcset="assets/siteV2-big.png 1x, assets/siteV2-small.png 2x"
+            sizes="max-width: 360px"
+             
+            width="358"
+            height="288"
+            alt="Portfolio Page V.2"
+          />
           <h4>Portolio Site V.2</h4>
         </a>
       </div>
@@ -118,11 +161,23 @@
         <h3>Things I Can Do</h3>
         <ul class="grid">
           <li>
-            <img src="assets/html.png" alt="HTML logo" />
+            <img
+              src="assets/html-big.png"
+              srcset="assets/html-big.png 1x, assets/html-big.png 2x"
+              sizes="max-width: 90px"
+              width="90px"
+              alt="HTML logo"
+            />
             <h4>HTML</h4>
           </li>
           <li>
-            <img src="assets/css.png" alt="CSS logo" />
+            <img
+              src="assets/css-big.png"
+              srcset="assets/css-big.png 1x, assets/css-big.png 2x"
+              sizes="max-width: 90px"
+              width="90px"
+              alt="CSS logo"
+            />
             <h4>CSS</h4>
           </li>
         </ul>
@@ -130,28 +185,30 @@
     </section>
     <section id="contact">
       <div class="contact">
+        
         <h3>Get in Touch</h3>
         <form action="">
           <input type="text" placeholder="NAME" />
-          <input type="email" name="emial" id="" />
-          <textarea name="message" id="" cols="30" rows="10"></textarea>
+          <input type="email" name="emial" id="" placeholder="SUBJECT"/>
+          <textarea name="message" id="" cols="30" rows="10" placeholder="TYPE YOUR MESSAEG HERE"></textarea>
           <button class="button">Send Mesesage</button>
         </form>
       </div>
+    
     </section>
     <footer>
       <div class="grid">
         <p class="copyright">Copyright 2021 Nick Niven Reed</p>
         <ul class="social">
           <li>
-            <a href="https://github.com/nivenreed" target="_blank"
+            <a href="https://github.com/nivenreed" target="_blank" rel="noopener"
               ><ion-icon name="logo-github"></ion-icon
             ></a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/nicholas-niven-reed"
-              target="_blank"
+              target="_blank" rel="noopener"
               ><ion-icon name="logo-linkedin"></ion-icon
             ></a>
           </li>

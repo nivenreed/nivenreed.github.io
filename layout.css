@@ -101,6 +101,7 @@
     z-index: 10000;
 }
 
+
 .welcome-text{
     padding: 0 20px 20px 20px;
     grid-column: 2/8;
@@ -113,7 +114,9 @@
     grid-row: 1;  
 }
 .welcome-img img{
-    width: 80%; 
+    width: 80%;
+    height: 90%;
+    
 }
 .welcome-text a{
     margin: 20px 0;
@@ -197,8 +200,16 @@ footer .social{
     display: flex;
     justify-content: flex-end;
 }
+
 footer img{
-    width: 20px;
+    width: 40px;
+    height: 40px;
+}
+footer a{
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+
 }
 /*about page*/
 .about-page img{
