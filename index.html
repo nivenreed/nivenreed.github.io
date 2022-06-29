@@ -114,46 +114,35 @@
         <a href="#portfolio" class="button">View My Work</a>
       </div>
       <div class="welcome-img">
-        <img
-          src="assets/Nick-small.png" 
-          srcset="assets/Nick-big.png 50w , assets/Nick-small.png 500w"
-          sizes="(min-width: 620px) 250vw, "
-          width="592"
-          height="800"
-          alt="Picture of me"
-          
-        />
+        <picture>
+          <source media="(max-width: 600px" srcset="assets/Nick-small.png">
+          <source media="(max-width: 800px" srcset="assets/Nick-big.png">
+          <img src="assets/Nick-big.png" alt="Picture of me">
+        </picture>
+
       </div>
     </header>
     <section id="portfolio">
       <h3 class="projects">Some of my Projects</h3>
       <div class="projects grid">
-        <a href="#">
-          <img
-            src="assets/computer-screen-big.png"
-            srcset="
-              assets/computer-screen-big.png   1x,
-              assets/computer-screen-small.png 2x
-            "
-            sizes="max-width: 360px"
-            width="120"
-            height="290"
-            alt="Portfolio Page V.1"
-          />
-          <h4>Portfolio Site V.1</h4>
-        </a>
         <a href="./portfolio-site.html">
           <img
             src="assets/siteV2-big.png"
             srcset="assets/siteV2-big.png 1x, assets/siteV2-small.png 2x"
-            sizes="max-width: 360px"
-             
-            width="358"
-            height="288"
             alt="Portfolio Page V.2"
           />
-          <h4>Portolio Site V.2</h4>
+          <h4>Portolio Site</h4>
         </a>
+        <a href="./photo-album.html">
+          <img
+            src="assets/photo-album.png"
+            
+            
+            alt="Photo-Album"
+          />
+          <h4>Photo-Album</h4>
+        </a>
+        
       </div>
     </section>
     <section id="skills">
@@ -179,6 +168,15 @@
               alt="CSS logo"
             />
             <h4>CSS</h4>
+          </li>
+          <li>
+            <img
+              src="assets/javascript.png"
+              sizes="max-width: 90px"
+              width="90px"
+              alt="javascript logo"
+            />
+            <h4>JavaScript</h4>
           </li>
         </ul>
       </div>
