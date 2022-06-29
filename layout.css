@@ -274,6 +274,9 @@ footer a{
 #portfolio-page a{
     border-bottom: solid 1px var(--line);
 }
+#photo-album-page a{
+    border-bottom: solid 1px var(--line);
+}
 .portfolio-page img{
     max-height: 200px;
     width: auto;
